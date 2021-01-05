@@ -1,0 +1,38 @@
+/* Default Page Styling */
+
+* {
+  border: 1px dotted blue;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+  height: 20vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.fish-list {
+  padding-left: 2em;
+  width: 65%;
+  border: 1px solid black;
+}
+
+aside {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+
+
+

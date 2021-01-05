@@ -1,12 +1,15 @@
 /* Default Page Styling */
 
 * {
-  border: 1px dotted blue;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
   height: 20vh;
+}
+
+h2 {
+  text-align: center;
 }
 
 header {
@@ -18,13 +21,11 @@ header {
 
 .container {
   display: flex;
-  justify-content: space-between;
-
 }
 
-.fish-list {
+.main-content {
   padding-left: 2em;
-  width: 65%;
+  width: 75%;
   border: 1px solid black;
 }
 
@@ -32,6 +33,35 @@ aside {
   border: 1px solid black;
   padding: 1em;
 }
+
+.fish-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding-left: 1em;
+}
+
+.fish-card__text {
+  width: 70%;
+  text-align: center;
+}
+
+.location-list {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.location-card {
+  border: 1px solid black;
+  margin: 1em;
+}
+
+/* .location-card img {
+
+} */
+
+
 
 
 

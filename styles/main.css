@@ -68,11 +68,25 @@ aside {
   margin: 1em;
 }
 
-/* .location-card img {
+/* Nav Bar Component */
+.nav-container {
+  justify-content: center;
+  background-color: rgb(255, 102, 0);
+}
 
-} */
+.nav-item {
+  padding: 2em;
+  list-style: none;
 
+}
 
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: rgb(1, 141, 141);
+}
 
 
 

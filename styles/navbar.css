@@ -1,0 +1,16 @@
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid mediumspringgreen;
+    background-color: orange;
+
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+a {
+    text-decoration: none;
+}
+
+

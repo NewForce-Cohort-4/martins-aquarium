@@ -16,12 +16,20 @@
       />
       <h1>Martin's Aquarium</h1>
     </header>
-        <!-- Navbar -->
+
+
+    <!--NavBar-->
     <nav>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#"> My Fish</a></li>
-        <li class="nav-item"><a href="#">Quotes</a></li>
-        <li class="nav-item"><a href="#">Locations</a></li>
+      <ul class="container nav-container">
+        <li class="nav-item">
+          <a href="#fish-list">My Fish</a>
+        </li>
+        <li class="nav-item">
+          <a href="#travel-tips">Travel Tips</a>
+        </li>
+        <li class="nav-item">
+          <a href="#location-list">Places I've Been</a>
+        </li>
       </ul>
     </nav>
     ​
@@ -30,7 +38,7 @@
       <!--Column 1 -- Page Content-->
       <div class="main-content">
         <!--Fish List-->
-        <article class="fish-list">
+        <article class="fish-list" id="fish-list">
           <h2>My Fish</h2>
 
           <!--Fish Card-->
@@ -126,14 +134,14 @@
         </article>
 
         <!--Quotes Component-->
-        <article>
+        <article id="travel-tips">
           <h2>Quotes and Travel Tips</h2>
           <blockquote>Don't forget your passport!</blockquote>
           <blockquote>If you run out of money just rob someone</blockquote>
         </article>
         ​
         <!--Locations List Component-->
-        <article>
+        <article id="location-list">
           <!--Location Card-->
           <h2>Places I've Been</h2>
           <div class="container location-list">
@@ -177,7 +185,6 @@
               />
               <p>Madagascar</p>
             </section>
-
           </div>
         </article>
         ​

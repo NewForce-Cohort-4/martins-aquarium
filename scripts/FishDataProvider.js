@@ -8,7 +8,7 @@ const fishCollection = [
     {
         name: "Bart",
         food: "crustaceans",
-        length: "57cm",
+        length: 4,
         locationHarvested: "creek out back",
         typeOfFish: "Beta"
 
@@ -16,7 +16,7 @@ const fishCollection = [
     {
         name: "Poppy",
         food: "seeds",
-        length: "100cm",
+        length: 3,
         locationHarvested: "Ohio River",
         typeOfFish: "Sun Fish"
 
@@ -24,7 +24,7 @@ const fishCollection = [
     {
         name: "Sam",
         food: "other fish",
-        length: "68cm",
+        length: 7,
         locationHarvested: "South of France",
         typeOfFish: "Clown"
 
@@ -32,7 +32,7 @@ const fishCollection = [
     {
         name: "Marney",
         food: "Jelly Fish",
-        length: "307cm",
+        length: 9,
         locationHarvested: "Atlantic",
         typeOfFish: "Big Fish"
 
@@ -40,7 +40,7 @@ const fishCollection = [
     {
         name: "Bruce",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 120,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -48,7 +48,7 @@ const fishCollection = [
     {
         name: "Nancy",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 2,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -56,7 +56,7 @@ const fishCollection = [
     {
         name: "Duke",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 4,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -64,7 +64,7 @@ const fishCollection = [
     {
         name: "Samson",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 7,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -72,7 +72,7 @@ const fishCollection = [
     {
         name: "Bart",
         food: "crustaceans",
-        length: "57cm",
+        length: 12,
         locationHarvested: "creek out back",
         typeOfFish: "Beta"
 
@@ -80,7 +80,7 @@ const fishCollection = [
     {
         name: "Poppy",
         food: "seeds",
-        length: "100cm",
+        length: 9,
         locationHarvested: "Ohio River",
         typeOfFish: "Sun Fish"
 
@@ -88,7 +88,7 @@ const fishCollection = [
     {
         name: "Sam",
         food: "other fish",
-        length: "68cm",
+        length: 20,
         locationHarvested: "South of France",
         typeOfFish: "Clown"
 
@@ -96,7 +96,7 @@ const fishCollection = [
     {
         name: "Marney",
         food: "Jelly Fish",
-        length: "307cm",
+        length: 10,
         locationHarvested: "Atlantic",
         typeOfFish: "Big Fish"
 
@@ -104,7 +104,7 @@ const fishCollection = [
     {
         name: "Bruce",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 11,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -112,7 +112,7 @@ const fishCollection = [
     {
         name: "Nancy",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 4,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -120,7 +120,7 @@ const fishCollection = [
     {
         name: "Duke",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 9,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -128,7 +128,7 @@ const fishCollection = [
     {
         name: "Samson",
         food: "Anything it wants ",
-        length: "1020cm",
+        length: 12,
         locationHarvested: "Pacific Ocean",
         typeOfFish: "Great White Shark"
 
@@ -140,3 +140,48 @@ const fishCollection = [
 export function useFish() {
     return fishCollection.slice()
 }
+
+export const mostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const holyFish = []
+
+    for (let singleFish of fishCollection) {
+        if(singleFish.length%3===0){
+            // If the fish's length is evenly divisible by 3, run this code
+            holyFish.push(singleFish)
+        }
+
+    }
+
+    return holyFish
+}
+
+
+
+export const soldierFish = () => {
+
+    const soldiers = [];
+    // 5, 10, 15, 20, 25, etc... fish
+
+    for(let i =0; i < fishCollection.length; i++){
+        if(fishCollection[i].length % 5 === 0 && fishCollection[i].length % 3 !== 0){
+            soldiers.push(fishCollection[i])
+        }
+    }
+    return soldiers
+}
+
+
+
+export const nonHolyFish = () => {
+    // Any fish not a multiple of 3 or 5
+    const regularFish = []
+
+    for(let singleFish of fishCollection){
+        if(singleFish.length % 3 !== 0 && singleFish.length % 5 !== 0){
+            regularFish.push(singleFish)
+        }
+    }
+    return regularFish
+}
+
